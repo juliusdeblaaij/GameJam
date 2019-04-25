@@ -10,9 +10,10 @@ public class TongueController : MonoBehaviour
 
     public GameObject tongueObject;
 
-    bool isLicking;
+    [SerializeField]bool isLicking;
 
     public float speed = 1.0F;
+    public float moveSpeed = 1;
 
     // Time when the movement started.
     private float startTime;
@@ -20,7 +21,14 @@ public class TongueController : MonoBehaviour
     // Total distance between the markers.
     private float journeyLength;
 
-    private void Update()
+    Rigidbody2D tongueRb;
+
+    private void Awake()
+    {
+        tongueRb = tongueObject.GetComponent<Rigidbody2D>();
+    }
+
+    private void FixedUpdate()
     {
         if (Input.GetButtonDown("Fire1"))
         {
@@ -45,12 +53,26 @@ public class TongueController : MonoBehaviour
             float fracJourney = distCovered / journeyLength;
 
             // Set our position as a fraction of the distance between the markers.
-            tongueObject.transform.position = Vector3.Lerp(startPosition, targetPosition, fracJourney);
+            Vector3 lerp = Vector3.Lerp(startPosition, targetPosition, fracJourney);
+            tongueRb.MovePosition(new Vector2(lerp.x, lerp.y) * moveSpeed);
+
+            tongueObject.GetComponent<LineRenderer>().SetPositions(new Vector3[2] { transform.position, tongueObject.transform.position });
+
         }
 
-        if(tongueObject.transform.position == targetPosition)
+        if (tongueObject.transform.position == targetPosition)
         {
-            isLicking = false;
+            //isLicking = false;
+            targetPosition = transform.position;
+            startPosition = tongueObject.transform.position;
+
+            isLicking = true;
+
+            // Keep a note of the time the movement started.
+            startTime = Time.time;
+
+            // Calculate the journey length.
+            journeyLength = Vector3.Distance(startPosition, targetPosition);
         }
     }
 }
