@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlanetRotator : MonoBehaviour
+public class Rotator : MonoBehaviour
 {
     public float rotationSpeed = 1;
 
