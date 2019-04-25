@@ -124,6 +124,7 @@ GameObject:
   - component: {fileID: 354314942}
   - component: {fileID: 354314941}
   - component: {fileID: 354314940}
+  - component: {fileID: 354314943}
   m_Layer: 0
   m_Name: Fish_Sprite_01 (4)
   m_TagString: Untagged
@@ -231,8 +232,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1770495745
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 8f0aaaac2a964fe4aaffe730b3e2e34e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -245,6 +246,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &354314943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 354314938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9549a3395fd7f7c48ac02d7b6ac75d15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1.8
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -339,6 +353,7 @@ GameObject:
   - component: {fileID: 875180415}
   - component: {fileID: 875180417}
   - component: {fileID: 875180418}
+  - component: {fileID: 875180419}
   m_Layer: 0
   m_Name: Fish_Sprite_01
   m_TagString: Untagged
@@ -380,8 +395,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1770495745
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 8f0aaaac2a964fe4aaffe730b3e2e34e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -460,6 +475,19 @@ PolygonCollider2D:
       - {x: 0.64, y: -0.64}
       - {x: 0.64, y: -0.59999996}
       - {x: 0.02, y: 0.64}
+--- !u!114 &875180419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 875180414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9549a3395fd7f7c48ac02d7b6ac75d15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1.8
 --- !u!1 &1082195890
 GameObject:
   m_ObjectHideFlags: 0
@@ -529,8 +557,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1236763047
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b66b28fe01b2ba041b679fe678f619e2, type: 3}
   m_Color: {r: 1, g: 0.41037738, b: 0.41037738, a: 1}
@@ -709,6 +737,7 @@ GameObject:
   - component: {fileID: 1198336315}
   - component: {fileID: 1198336314}
   - component: {fileID: 1198336313}
+  - component: {fileID: 1198336316}
   m_Layer: 0
   m_Name: Fish_Sprite_01 (1)
   m_TagString: Untagged
@@ -816,8 +845,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1770495745
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 8f0aaaac2a964fe4aaffe730b3e2e34e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -830,6 +859,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1198336316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1198336311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9549a3395fd7f7c48ac02d7b6ac75d15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1.8
 --- !u!1 &1226235047
 GameObject:
   m_ObjectHideFlags: 0
@@ -843,7 +885,7 @@ GameObject:
   - component: {fileID: 1226235050}
   m_Layer: 0
   m_Name: World_Sprite_01
-  m_TagString: Untagged
+  m_TagString: Planet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -882,8 +924,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1791256003
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 9b49960e91aa702419cfe3e5f3d42886, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -942,6 +984,7 @@ GameObject:
   - component: {fileID: 1717154402}
   - component: {fileID: 1717154401}
   - component: {fileID: 1717154400}
+  - component: {fileID: 1717154403}
   m_Layer: 0
   m_Name: Fish_Sprite_01 (5)
   m_TagString: Untagged
@@ -1049,8 +1092,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1770495745
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 8f0aaaac2a964fe4aaffe730b3e2e34e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1063,6 +1106,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1717154403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1717154398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9549a3395fd7f7c48ac02d7b6ac75d15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1.8
 --- !u!1 &1748860724
 GameObject:
   m_ObjectHideFlags: 0
@@ -1075,6 +1131,7 @@ GameObject:
   - component: {fileID: 1748860728}
   - component: {fileID: 1748860727}
   - component: {fileID: 1748860726}
+  - component: {fileID: 1748860729}
   m_Layer: 0
   m_Name: Fish_Sprite_01 (2)
   m_TagString: Untagged
@@ -1182,8 +1239,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1770495745
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 8f0aaaac2a964fe4aaffe730b3e2e34e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1196,6 +1253,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1748860729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1748860724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9549a3395fd7f7c48ac02d7b6ac75d15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1.8
 --- !u!1 &1790341662
 GameObject:
   m_ObjectHideFlags: 0
@@ -1255,6 +1325,7 @@ GameObject:
   - component: {fileID: 2087144298}
   - component: {fileID: 2087144297}
   - component: {fileID: 2087144296}
+  - component: {fileID: 2087144299}
   m_Layer: 0
   m_Name: Fish_Sprite_01 (6)
   m_TagString: Untagged
@@ -1362,8 +1433,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1770495745
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 8f0aaaac2a964fe4aaffe730b3e2e34e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1376,6 +1447,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2087144299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2087144294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9549a3395fd7f7c48ac02d7b6ac75d15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1.8
 --- !u!1 &2092475845
 GameObject:
   m_ObjectHideFlags: 0
@@ -1388,6 +1472,7 @@ GameObject:
   - component: {fileID: 2092475849}
   - component: {fileID: 2092475848}
   - component: {fileID: 2092475847}
+  - component: {fileID: 2092475850}
   m_Layer: 0
   m_Name: Fish_Sprite_01 (3)
   m_TagString: Untagged
@@ -1495,8 +1580,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1770495745
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 8f0aaaac2a964fe4aaffe730b3e2e34e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1509,3 +1594,16 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2092475850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2092475845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9549a3395fd7f7c48ac02d7b6ac75d15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1.8
