@@ -4,15 +4,11 @@ using UnityEngine;
 
 public class PlanetRotator : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public float rotationSpeed = 1;
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+        Vector3 rotation = new Vector3(0, 0, Input.GetAxis("Horizontal") * rotationSpeed);
+        transform.Rotate(rotation);
     }
 }
